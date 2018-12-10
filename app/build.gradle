@@ -71,3 +71,8 @@ dependencies {
 
 
 }
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
