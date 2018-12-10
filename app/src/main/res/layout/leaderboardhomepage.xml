@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_rectangle"
+        android:layout_marginStart="@dimen/marginBottom"
+        android:layout_marginEnd="@dimen/marginBottom"
+        android:orientation="vertical">
+
+        <org.zubbl.customviews.CustomTabLayout
+            android:id="@+id/tablayout_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/paddingTopESmall"
+            app:tabIndicatorColor="@color/blue"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorGravity="bottom"
+            app:tabIndicatorHeight="2dp"
+            android:layout_marginStart="@dimen/marginLeft"
+            android:layout_marginEnd="@dimen/marginLeft"
+            app:tabTextColor="@color/login_hint_color"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/TabStyle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_line"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/nodatafound_leaderB"
+            style="@style/noDataFound"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text= "@string/nodata_found" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vp_height" />
+    </LinearLayout>
+
+</RelativeLayout>

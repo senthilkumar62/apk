@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "org.zubbl"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "6.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 24
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Image Library
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //DAGGER 2 DEPENDENCY
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    //RETROFIT 2 API
+    implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    //GSON
+    implementation "com.google.code.gson:gson:${gsonVersion}"
+    //HTTP INTERCEPTOR
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    //TextInputLayout
+    implementation 'com.android.support:design:28.0.0' //change compile to implementation
+    //Map
+    implementation 	'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+   implementation 'com.google.android.gms:play-services-places:16.0.0'
+    //burry llibrary
+    implementation 'jp.wasabeef:blurry:2.1.1'
+    implementation 'com.wonderkiln:blurkit:1.0.0'
+
+    //glide library
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    kapt 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //Image Library
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    implementation 'org.sufficientlysecure:html-textview:3.6'
+
+
+}

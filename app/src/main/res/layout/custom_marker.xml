@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corners_white"
+        android:layoutDirection="rtl"
+        android:paddingEnd="@dimen/paddingTopLow"
+        android:paddingStart="@dimen/paddingTopLow"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/image1_remaining_users"
+            android:layout_width="@dimen/marker_width"
+            android:layout_height="@dimen/marker_width"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:textColor="@color/white"
+            android:background="@drawable/white_circle_border" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image2"
+            android:layout_width="@dimen/marker_width"
+            android:layout_height="@dimen/marker_width"
+            android:layout_marginStart="@dimen/marker_margin"
+            android:padding="@dimen/marker_padding"
+            android:background="@drawable/circle"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image3"
+            android:layout_width="@dimen/marker_width"
+            android:layout_height="@dimen/marker_width"
+            android:layout_marginStart="@dimen/marker_margin"
+            android:padding="@dimen/marker_padding"
+            android:background="@drawable/circle" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image4"
+            android:layout_width="@dimen/marker_width"
+            android:layout_height="@dimen/marker_width"
+            android:layout_marginStart="@dimen/marker_margin"
+            android:padding="@dimen/marker_padding"
+            android:background="@drawable/circle" />
+    </LinearLayout>
+</LinearLayout>

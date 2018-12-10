@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingTopESmall"
+        android:layout_marginEnd="@dimen/marginBottom"
+        android:layout_marginStart="@dimen/marginBottom"
+        android:layout_marginTop="@dimen/marginLeft"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_mName_feed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/muli_regular"
+            android:text="@string/nodata_found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSmall" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_time_feed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/clock"
+            android:drawablePadding="@dimen/paddingTopESmall"
+            android:fontFamily="@font/muli_regular"
+            android:gravity="end"
+            android:text="@string/nodata_found"
+            android:textColor="@color/login_hint_color"
+            android:textSize="@dimen/textSmall" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_merchantImage_feed"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginEnd="@dimen/marginBottom"
+        android:layout_marginStart="@dimen/marginBottom"
+        android:layout_marginTop="@dimen/paddingTopESmall"
+        android:background="@color/divider_line"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:layout_marginEnd="@dimen/marginBottom"
+        android:layout_marginStart="@dimen/marginBottom"
+        android:layout_marginTop="@dimen/marginBottom">
+
+        <LinearLayout
+            android:id="@+id/rl_profiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_alignParentStart="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile1"
+                android:layout_width="@dimen/marker_width"
+                android:layout_height="@dimen/marker_width"
+                android:background="@drawable/circle"
+                android:padding="@dimen/marker_padding"
+                android:visibility="visible" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile2"
+                android:layout_width="@dimen/marker_width"
+                android:layout_height="@dimen/marker_width"
+                android:layout_marginStart="@dimen/marker_margin"
+                android:background="@drawable/circle"
+                android:padding="@dimen/marker_padding"
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile3"
+                android:layout_width="@dimen/marker_width"
+                android:layout_height="@dimen/marker_width"
+                android:layout_marginStart="@dimen/marker_margin"
+                android:background="@drawable/circle"
+                android:visibility="gone"
+                android:padding="@dimen/marker_padding" />
+
+
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_joinedCount_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/paddingTopVLow"
+            android:layout_toEndOf="@+id/rl_profiles"
+            android:fontFamily="@font/muli_regular"
+            android:text="@string/nodata_found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textVSmall" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_totalCount_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/paddingTopLow"
+            android:layout_toEndOf="@+id/tv_joinedCount_feed"
+            android:layout_toStartOf="@+id/iv_more_feed"
+            android:fontFamily="@font/muli_regular"
+            android:text="@string/nodata_found"
+            android:textColor="@color/login_hint_color"
+            android:textSize="@dimen/textVSmall" />
+
+        <ImageView
+            android:id="@+id/iv_more_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/marginBottom"
+            android:src="@drawable/more" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line" />
+
+</LinearLayout>

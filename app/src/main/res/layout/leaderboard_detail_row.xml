@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/marginBottom"
+    android:paddingEnd="@dimen/marginBottom"
+    android:paddingBottom="@dimen/paddingTopESmall"
+    android:paddingTop="@dimen/paddingTopESmall"
+    android:orientation="horizontal"
+    android:id="@+id/rootlayout_LB"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_rank"
+        android:layout_width="@dimen/profile_widhtLB"
+        android:layout_height="@dimen/profile_widhtLB"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/textSmall"
+        android:textColor="@color/rank_color"
+        android:fontFamily="@font/muli_regular"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile_leaderboard"
+        android:layout_width="@dimen/profile_widhtLB"
+        android:layout_height="@dimen/profile_widhtLB"
+        android:layout_marginStart="@dimen/marginBottom"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/tv_rank"
+        android:src="@drawable/useravatar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_name_LB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/iv_profile_leaderboard"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/tv_points_LB"
+        android:layout_marginEnd="@dimen/paddingTopESmall"
+        android:textSize="@dimen/textSmall"
+        android:textColor="@color/black"
+        android:fontFamily="@font/muli_regular"
+        android:layout_marginStart="@dimen/marginLeft" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_points_LB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/textSmall"
+        android:textColor="@color/black"
+        android:fontFamily="@font/muli_regular"/>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_menu_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:padding="@dimen/paddingTopESmall"
+        android:layout_marginStart="@dimen/marginLeft"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/cancel"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_cude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/cube"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/iv_menu_close"
+            android:layout_below="@id/iv_menu_close"
+            android:layout_above="@+id/iv_cude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/zubbl"
+                android:layout_marginTop="@dimen/paddingTopESmall"
+                android:paddingBottom="@dimen/paddingTopESmall"
+                android:textColor="@color/black"
+                android:fontFamily="@font/muli_extrabold"
+                android:textSize="@dimen/text_extra_small" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

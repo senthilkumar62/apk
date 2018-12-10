@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_contetn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_name_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textNormal"
+        android:layout_marginStart="@dimen/marginLeft"
+        android:fontFamily="@font/muli_semibold"
+        android:textColor="@color/light_black"
+        android:layout_toStartOf="@+id/iv_icon_setting"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/change_password" />
+    <ImageView
+        android:id="@+id/iv_icon_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:padding="@dimen/marginLeft"
+        android:src="@drawable/right_arrow"/>
+
+    <CheckBox
+        android:id="@+id/toggle_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:button="@drawable/toggle_selector"
+        android:background="@null"
+        android:textOff="@null"
+        android:textOn="@null"
+        android:visibility="visible"
+        android:layout_margin="@dimen/marginLeft" />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/rl_contetn"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginStart="@dimen/marginLeft"
+        android:layout_marginEnd="@dimen/marginLeft"
+        android:layout_height="0.5dp"
+        android:background="@color/login_hint_color"/>
+
+
+
+</RelativeLayout>

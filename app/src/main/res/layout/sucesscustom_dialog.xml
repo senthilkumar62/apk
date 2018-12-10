@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginBottom"
+        android:layout_marginEnd="@dimen/marginBottom"
+        android:background="@drawable/white_top_corners">
+
+        <ImageView
+            android:id="@+id/customDialogImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/confirm_tick"
+            android:layout_marginTop="@dimen/paddingTopESmall"
+            android:contentDescription="@string/app_name" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/groups_and_events_message1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customDialogImage1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="@dimen/marginLeft"
+            android:paddingStart="@dimen/marginLeft"
+            android:paddingEnd="@dimen/marginLeft"
+            android:layout_marginTop="5dp"
+            android:text="@string/added"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textLarge"
+            android:visibility="visible"
+            app:fontFamily="@font/muli_regular" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialogTextMessage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groups_and_events_message1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.4"
+            android:padding="@dimen/marginBottom"
+            android:paddingBottom="@dimen/marginLeft"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSmall"
+            app:fontFamily="@font/muli_regular" />
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/customOkTxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:layout_marginTop="-3dp"
+        android:layout_marginStart="@dimen/marginBottom"
+        android:layout_marginEnd="@dimen/marginBottom"
+        android:paddingBottom="@dimen/paddingTopESmall"
+        android:background="@drawable/blue_bottom_corners"
+        android:paddingTop="@dimen/paddingTopESmall"
+        android:text="@string/okay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSmall"
+        app:fontFamily="@font/muli_regular" />
+</LinearLayout>

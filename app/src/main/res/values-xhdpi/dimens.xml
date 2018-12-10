@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginLeft">20dp</dimen>
+    <dimen name="marginLeftSmall">13dp</dimen>
+    <dimen name="marginTop">32dp</dimen>
+    <dimen name="marginBottom">15dp</dimen>
+    <dimen name="marginTopNormal">28dp</dimen>
+    <dimen name="marginTopLarge">35dp</dimen>
+    <dimen name="marginXLarge">38dp</dimen>
+    <dimen name="marginBottomLarge">62dp</dimen>
+
+    <dimen name="paddingTop">25dp</dimen>
+    <dimen name="paddingLeft">15dp</dimen>
+    <dimen name="paddingLeftLarge">50dp</dimen>
+
+    <dimen name="paddingTopSmall">15dp</dimen>
+    <dimen name="paddingTopNormal">16dp</dimen>
+    <dimen name="paddingLeftSmall">13dp</dimen>
+    <dimen name="paddingLeftMedium">18dp</dimen>
+    <dimen name="paddingLeftNormal">19dp</dimen>
+    <dimen name="paddingTopLow">5dp</dimen>
+    <dimen name="paddingTopVLow">8dp</dimen>
+    <dimen name="paddingTopESmall">10dp</dimen>
+
+    <dimen name="textLow">12sp</dimen>
+    <dimen name="text11">13sp</dimen>
+    <dimen name="textVSmall">14sp</dimen>
+    <dimen name="textSmall">16sp</dimen>
+    <dimen name="textBNormal">15sp</dimen>
+    <dimen name="textANormal">17sp</dimen>
+    <dimen name="textNormal">18sp</dimen>
+    <dimen name="textARegular">19sp</dimen>
+    <dimen name="textRegular">20sp</dimen>
+    <dimen name="textLarge">21sp</dimen>
+    <dimen name="textLargeMedium">24sp</dimen>
+    <dimen name="textLargeNormal">28sp</dimen>
+    <dimen name="textLarge28">30sp</dimen>
+    <dimen name="textLarge30">32sp</dimen>
+    <dimen name="textLarge32">34sp</dimen>
+    <dimen name="text_extra_small">52sp</dimen>
+    <dimen name="text_Extra_Large">70sp</dimen>
+    <dimen name="merchant_profile_width">82dp</dimen>
+    <dimen name="merchant_profile_height">82dp</dimen>
+
+    <!--MARKER-->
+    <dimen name="marker_width">42dp</dimen>
+    <dimen name="marker_padding">3dp</dimen>
+    <dimen name="marker_margin">-13dp</dimen>
+    <dimen name="marker_bg">156dp</dimen>
+    <!--leaderBoard-->
+    <dimen name="vp_height">356dp</dimen>
+    <dimen name="profile_widhtLB">42dp</dimen>
+
+
+</resources>

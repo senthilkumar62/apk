@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_nearby"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="org.zubbl.views.activities.MainActivity" />
+
+    <ImageView
+        android:id="@+id/iv_left_icon"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:src="@drawable/left_arrow3x"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginLeft"/>
+
+
+</RelativeLayout>

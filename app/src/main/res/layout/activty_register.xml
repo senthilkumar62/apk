@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/action_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginBottom"
+            android:layout_marginEnd="@dimen/marginBottom"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_register_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayout"
+                app:hintTextAppearance="@style/TextLabel"
+                android:layout_marginTop="@dimen/paddingTopESmall">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/register_fname"
+                    style="@style/registerEditText"
+                    android:inputType="textCapSentences"
+                    android:maxLength="30"
+                    android:layout_marginTop="@dimen/paddingTopESmall"
+                    android:hint="@string/register_firstname"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_register_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayout"
+                app:hintTextAppearance="@style/TextLabel"
+                android:layout_marginTop="@dimen/paddingTopESmall">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/register_lname"
+                    style="@style/registerEditText"
+                    android:inputType="textCapSentences"
+                    android:maxLength="30"
+                    android:layout_marginTop="@dimen/paddingTopESmall"
+                    android:hint="@string/register_lastname"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_register_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayout"
+                app:hintTextAppearance="@style/TextLabel"
+                android:layout_marginTop="@dimen/paddingTopESmall">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/register_age"
+                    style="@style/registerEditText"
+                    android:layout_marginTop="@dimen/paddingTopESmall"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/age"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingTopESmall"
+                android:textSize="@dimen/textVSmall"
+                android:singleLine="true"
+                android:paddingStart="3dp"
+                android:paddingEnd="0dp"
+                android:fontFamily="@font/muli_regular"
+                android:textColor="@color/login_hint_color"
+                android:text="@string/gender"/>
+            <RadioGroup
+                android:id="@+id/radiogroup_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingTopESmall"
+               android:orientation="horizontal" >
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:fontFamily="@font/muli_regular"
+                    android:textSize="@dimen/textVSmall"
+                    android:theme="@style/radioButtonTheme"
+                    android:textColor="@color/black"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_regular"
+                    android:layout_marginStart="@dimen/marginTopLarge"
+                    android:layout_marginEnd="@dimen/marginTopLarge"
+                    android:text="@string/female"
+                    android:textSize="@dimen/textVSmall"
+                    android:theme="@style/radioButtonTheme"
+                    android:textColor="@color/black"/>
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/rb_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_regular"
+                    android:text="@string/other"
+                    android:textSize="@dimen/textVSmall"
+                    android:theme="@style/radioButtonTheme"
+                    android:textColor="@color/black"/>
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextLabel"
+                android:theme="@style/MyTextInputLayout"
+                android:layout_marginTop="@dimen/paddingTopESmall">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/register_emailaddress"
+                    style="@style/registerEditText"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="@dimen/paddingTopESmall"
+                    android:hint="@string/register_email"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayout"
+                app:hintTextAppearance="@style/TextLabel"
+                android:layout_marginTop="@dimen/paddingTopESmall">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/register_password"
+                    style="@style/registerEditText"
+                    android:maxLength="30"
+                    android:layout_marginTop="@dimen/paddingTopESmall"
+                    android:inputType="textPassword"
+                    android:hint="@string/register_password"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_register_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayout"
+                app:hintTextAppearance="@style/TextLabel"
+                android:layout_marginTop="@dimen/paddingTopESmall">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/register_confirmpassword"
+                    style="@style/registerEditText"
+                    android:maxLength="30"
+                    android:layout_marginTop="@dimen/paddingTopESmall"
+                    android:inputType="textPassword"
+                    android:hint="@string/register_confirmpassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/btn_register"
+                style="@style/commonBtnTextview"
+                android:text="@string/register"
+                android:background="@drawable/register_btn_background"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+

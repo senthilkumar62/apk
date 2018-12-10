@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Splash_Theme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!-- EditText -->
+    <style name="commonEdittext">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/login_hint_color</item>
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/textVSmall</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--COMMON BUTTONS-->
+    <style name="commonBtnTextview">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSmall</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/paddingTopESmall</item>
+    </style>
+    <!--Error Message-->
+    <style name="commonErrorTextview">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/textLow</item>
+        <item name="android:fontFamily">@font/muli_regular</item>
+        <item name="android:paddingTop">1dp</item>
+    </style>
+
+
+    <style name="horizontal_line">
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="share_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--SIGNUP-->
+
+    <style name="MyTextInputLayout" parent="AppTheme">
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="TextLabel" >
+        <item name="android:textSize">@dimen/textVSmall</item>
+        <item name="android:textColor">@color/login_hint_color</item>
+    </style>
+
+    <style name="registerEditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/textVSmall</item>
+        <item name="android:fontFamily">@font/muli_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/login_hint_color</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:theme">@style/MyEditTextTheme</item>
+        <item name="android:paddingBottom">@dimen/paddingTopESmall</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#33555555</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+        <item name="colorAccent">@color/login_hint_color</item>
+        <item name="colorPrimary">@color/login_hint_color</item>
+    </style>
+
+    <!--LOGIN-->
+    <style name="loginEditTextTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#33555555</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+        <item name="colorAccent">@color/login_hint_color</item>
+        <item name="colorPrimary">@color/login_hint_color</item>
+    </style>
+
+    <style name="checkBoxTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#33555555</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
+    <style name="radioButtonTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">@color/blue</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
+    <!--Tab layout-->
+    <style name="TabStyle" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textSmall</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--<item name="android:minWidth">120dp</item>-->
+    <!--<item name="android:layout_margin">@dimen/paddingTopESmall</item>-->
+    <!--No Data Found-->
+    <style name="noDataFound">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/textNormal</item>
+        <item name="android:fontFamily">@font/muli_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+
+</resources>

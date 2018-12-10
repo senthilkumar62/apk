@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/paddingTopVLow"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title_sidemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/paddingTopESmall"
+        android:fontFamily="@font/muli_semibold"
+        android:textSize="@dimen/textSmall" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_zubbl_sidemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zubbl"
+        android:layout_marginTop="@dimen/paddingTopESmall"
+        android:layout_marginBottom="@dimen/paddingTopESmall"
+        android:layout_marginStart="@dimen/marginTopLarge"
+        android:paddingStart="@dimen/marginTopLarge"
+        android:paddingTop="@dimen/paddingTopLow"
+        android:paddingBottom="@dimen/paddingTopLow"
+        android:paddingEnd="@dimen/marginTopLarge"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:visibility="gone"
+        android:fontFamily="\@font/muli_semibold"
+        android:textSize="@dimen/textSmall" />
+
+
+</LinearLayout>
+

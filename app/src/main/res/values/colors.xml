@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008aff</color>
+    <color name="colorPrimaryDark">#008aff</color>
+    <color name="colorAccent">#1ac65c</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ea4335</color>
+    <!--Login-->
+    <color name="login_hint_color">#aaaaaa</color>
+    <color name="light_black">#1f2b38</color>
+    <color name="blue">#008aff</color>
+    <color name="green">#1ac65c</color>
+    <color name="white_transpaent">#F2FFFF</color>
+    <color name="login_bg">#f8f8f8</color>
+    <color name="placegolder_bg">#b2b9c4</color>
+    <!--Leaderboard-->
+    <color name="odd_bg">#f7f8f9</color>
+    <color name="divider_line">#f2f2f2</color>
+    <color name="rank_color">#b2b9c4</color>
+
+
+
+</resources>

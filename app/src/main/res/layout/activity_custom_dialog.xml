@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curve_shape_background"
+    android:padding="@dimen/paddingTopESmall">
+
+    <ImageView
+        android:id="@+id/customDialogImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/paddingTopLow"
+        android:contentDescription="@string/app_name" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/dialogTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customDialogImage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.4"
+        android:padding="@dimen/marginLeft"
+        android:fontFamily="@font/muli_regular"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSmall" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/groups_and_events_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogTextMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:fontFamily="@font/muli_regular"
+        android:lineSpacingMultiplier="1.4"
+        android:textColor="@color/light_black"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dialogTextMessage"
+        android:layout_below="@+id/groups_and_events_message"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/customDenyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingTopESmall"
+            android:layout_marginStart="@dimen/paddingTopESmall"
+            android:layout_marginEnd="@dimen/paddingTopESmall"
+            android:layout_marginTop="@dimen/paddingTopESmall"
+            android:background="@drawable/dialog_btn_disabled"
+            android:elevation="2dp"
+            android:fontFamily="@font/muli_bold"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingTopVLow"
+            android:paddingLeft="@dimen/marginLeft"
+            android:paddingRight="@dimen/marginLeft"
+            app:fontFamily="@font/muli_bold"
+            android:paddingTop="@dimen/paddingTopVLow"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textVSmall" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/customOkTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingTopESmall"
+            android:layout_marginTop="@dimen/paddingTopESmall"
+            android:layout_marginEnd="@dimen/paddingTopESmall"
+            android:fontFamily="@font/muli_bold"
+            android:layout_marginStart="@dimen/paddingTopESmall"
+            android:background="@drawable/dialog_btn_enabled"
+            android:elevation="2dp"
+            android:gravity="center"
+            app:fontFamily="@font/muli_bold"
+            android:paddingBottom="@dimen/paddingTopVLow"
+            android:paddingLeft="@dimen/marginLeft"
+            android:paddingRight="@dimen/marginLeft"
+            android:paddingTop="@dimen/paddingTopVLow"
+            android:text="@string/okay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textVSmall" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/customAllowTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingTopESmall"
+            android:layout_marginTop="@dimen/paddingTopESmall"
+            android:layout_marginStart="@dimen/paddingTopESmall"
+            android:layout_marginEnd="@dimen/paddingTopESmall"
+            android:background="@drawable/dialog_btn_enabled"
+            android:elevation="2dp"
+            app:fontFamily="@font/muli_bold"
+            android:fontFamily="@font/muli_bold"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingTopVLow"
+            android:paddingLeft="@dimen/marginLeft"
+            android:paddingRight="@dimen/marginLeft"
+            android:paddingTop="@dimen/paddingTopVLow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textVSmall" />
+    </LinearLayout>
+
+</RelativeLayout>

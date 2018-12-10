@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/login_bg"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLeft"
+            android:layout_marginEnd="@dimen/marginLeft"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo"
+                android:layout_marginStart="@dimen/marginBottom"
+                android:layout_marginTop="@dimen/marginLeft"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/zubbl"
+                android:gravity="center"
+                android:textSize="@dimen/text_extra_small"
+                android:fontFamily="@font/muli_extrabold"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/marginBottom"
+                android:layout_marginBottom="@dimen/marginBottom"/>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="6dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="6dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/marginLeft"
+                    android:paddingEnd="@dimen/marginLeft"
+                    android:paddingTop="@dimen/paddingHigh"
+                    android:paddingBottom="@dimen/marginTopNormal">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edt_email_login"
+                        style="@style/commonEdittext"
+                        android:hint="@string/login_username"
+                        android:padding="@dimen/marginBottom"
+                        android:drawableStart="@drawable/email"
+                        android:drawablePadding="@dimen/marginLeft"
+                        android:fontFamily="@font/muli_regular"
+                        android:inputType="textEmailAddress"
+                        android:theme="@style/loginEditTextTheme"/>
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edt_password_login"
+                        style="@style/commonEdittext"
+                        android:hint="@string/login_password"
+                        android:padding="@dimen/marginBottom"
+                        android:drawableStart="@drawable/password"
+                        android:drawablePadding="@dimen/marginLeft"
+                        android:fontFamily="@font/muli_regular"
+                        android:layout_marginTop="@dimen/paddingLeftSmall"
+                        android:inputType="textPassword"
+                        android:theme="@style/loginEditTextTheme"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/cb_rememberMe_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/remember_me"
+                            android:layout_marginTop="@dimen/paddingTopVLow"
+                            android:textColor="@color/light_black"
+                            android:fontFamily="@font/muli_regular"
+                            android:theme="@style/checkBoxTheme"
+                            android:textSize="@dimen/text11"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_forgotPassword_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/login_forgotpassword"
+                            android:layout_gravity="end"
+                            android:fontFamily="@font/muli_regular"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text11"
+                            android:paddingTop="@dimen/paddingTopLow"
+                            android:paddingBottom="@dimen/paddingTopVLow"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/btn_login"
+                        style="@style/commonBtnTextview"
+                        android:text="@string/login_button"
+                        android:background="@drawable/login_btn_background"
+                        android:layout_marginTop="@dimen/marginBottom"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/btn_register_login"
+                        style="@style/commonBtnTextview"
+                        android:text="@string/register"
+                        android:background="@drawable/register_btn_background"
+                        android:layout_marginTop="@dimen/marginTopNormal"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

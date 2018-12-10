@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/marginBottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/marginLeft"
+        android:baselineAligned="false"
+        android:layout_marginEnd="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:layout_marginBottom="@dimen/marginBottom">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="@dimen/paddingLeftSmall"
+            android:layout_marginEnd="@dimen/paddingTopESmall"
+            android:background="@drawable/register_btn_background"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_points_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textVSmall"
+                android:textColor="@color/white"
+                android:fontFamily="@font/muli_regular"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textVSmall"
+                android:paddingTop="@dimen/paddingTopLow"
+                android:textColor="@color/white"
+                android:text="@string/totalpoints"
+                android:fontFamily="@font/muli_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/paddingTopESmall"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_tap_ins_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="@dimen/textVSmall"
+                android:textColor="@color/black"
+                android:fontFamily="@font/muli_regular" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textVSmall"
+                android:paddingTop="@dimen/paddingTopLow"
+                android:textColor="@color/login_hint_color"
+                android:text="@string/tap_ins"
+                android:fontFamily="@font/muli_regular" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_rank_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textVSmall"
+                android:paddingStart="@dimen/paddingTopESmall"
+                android:paddingEnd="@dimen/paddingTopESmall"
+                android:paddingTop="@dimen/paddingTopLow"
+                android:paddingBottom="@dimen/paddingTopLow"
+                android:gravity="end"
+                android:background="@drawable/black_rounded_circle"
+                android:textColor="@color/white"
+                android:fontFamily="@font/muli_regular" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/marginLeft"
+        android:layout_marginEnd="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginLeft"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSmall"
+            android:textColor="@color/black"
+            android:text="@string/your_rank"
+            android:fontFamily="@font/muli_regular" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSmall"
+            android:textColor="@color/login_hint_color"
+            android:gravity="end"
+            android:text="@string/next_rank"
+            android:fontFamily="@font/muli_regular" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/marginLeft"
+        android:layout_marginEnd="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/paddingTopVLow"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_rank_level"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSmall"
+            android:textColor="@color/black"
+            android:text="@string/your_rank"
+            android:fontFamily="@font/muli_regular" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/next_rank_level"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSmall"
+            android:textColor="@color/login_hint_color"
+            android:gravity="end"
+            android:text="@string/next_rank"
+            android:fontFamily="@font/muli_regular" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:layout_marginStart="@dimen/marginLeft"
+        android:layout_marginEnd="@dimen/marginLeft"
+        android:minHeight="8dp"
+        android:progressDrawable="@drawable/green_progress_drawable"
+        android:minWidth="200dp"
+        android:progress="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/marginLeft"
+        android:layout_marginEnd="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/paddingTopVLow"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/your_rank"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSmall"
+            android:textColor="@color/black"
+            android:fontFamily="@font/muli_regular" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/next_rank"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSmall"
+            android:textColor="@color/login_hint_color"
+            android:gravity="end"
+            android:fontFamily="@font/muli_regular" />
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.8dp"
+        android:background="@color/divider_line"/>
+</LinearLayout>
+</ScrollView>
