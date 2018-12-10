@@ -7,10 +7,12 @@ buildscript {
     ext.gsonVersion = '2.8.5'
 
     repositories {
+        google()
+        mavenCentral()
+        jcenter()
         maven { url "https://plugins.gradle.org/m2/" }
 
-        google()
-        jcenter()
+        
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.4'
