@@ -24,7 +24,7 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
-    - task: AndroidSigning@3
-      inputs:
-        apkFiles: '**/*.apk'
-        apksign: false
+- task: AndroidSigning@3
+  inputs:
+    apkFiles: '**/*.apk'
+    apksign: false
